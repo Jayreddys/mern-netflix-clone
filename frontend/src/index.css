@@ -31,7 +31,7 @@ body {
       /* Semi-transparent black at top */
       rgba(0, 0, 0, 0) 100%
       /* Fully transparent at bottom */
-    ), url(hero.png);
+    ), url("/hero.png");
 }
 
 .home-bg {
@@ -44,5 +44,5 @@ body {
 }
 
 .signin-bg {
-  background-image: url(hero.png);
+  background-image: url("/hero.png");
 }
