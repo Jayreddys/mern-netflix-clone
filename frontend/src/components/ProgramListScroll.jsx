@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronRight, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useContentStore } from "../store/content";
 import { useRef } from "react";
+import { ORIGINAL_IMG_BASE_URL, SMALL_IMG_BASE_URL } from "../utils/constants";
 
 const ProgramListScroll = ({ data, text }) => {
   if (data.length === 0) {
