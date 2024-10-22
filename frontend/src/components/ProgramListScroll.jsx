@@ -82,7 +82,7 @@ const ProgramListScroll = ({ data, text }) => {
                     </div>
                   </div>
                 </Link>
-                <div className="absolute -bottom-5 z-50 font-sm text-white md:hidden text-center font-light h-[40px] w-full py-1 px-2">
+                <div className="absolute bottom-0 z-50 font-sm text-white md:hidden text-center font-light h-[40px] w-full py-1 px-2">
                   {contentType === "movie" ? record.title : record.name}
                 </div>
               </div>
