@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useContentStore } from "../store/content";
+import { useRef } from "react";
 
 const ProgramListScroll = ({ data, text }) => {
   if (data.length === 0) {
