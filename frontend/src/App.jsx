@@ -12,7 +12,7 @@ import LoginPage from "./pages/LoginPage";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authUser";
 import { Loader } from "lucide-react";
-import WatchPage from "./pages/WatchPAge";
+import WatchPage from "./pages/WatchPage";
 import SearchPage from "./pages/home/SearchPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
