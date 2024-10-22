@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  /* This applies box-sizing: border-box; */
+}
+
+html,
+body {
+  @apply m-0 p-0;
+  /* This applies margin: 0; padding: 0; */
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+.hero-bg {
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 1) 0%,
+      /* Fully opaque black at bottom */
+      rgba(0, 0, 0, 0.4) 25%
+      /* 40% opacity black at 25% from top */
+    ),
+    /* Second gradient: from black (0.8) at the top to transparent at the top */
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      /* Semi-transparent black at top */
+      rgba(0, 0, 0, 0) 100%
+      /* Fully transparent at bottom */
+    ), url(hero.png);
+}
+
+.home-bg {
+  background-color: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      /* Semi-transparent black at top */
+      rgba(0, 0, 0, 0) 100%
+      /* Fully transparent at bottom */
+    );
+}
+
+.signin-bg {
+  background-image: url(hero.png);
+}
