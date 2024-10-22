@@ -68,7 +68,7 @@ const ProgramListScroll = ({ data, text }) => {
             record.backdrop_path && (
               <div
                 key={index}
-                className="relative flex-shrink-0 h-full w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 bg-black text-white rounded-sm cursor-pointer z-0"
+                className="relative flex-shrink-0 h-full w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 bg-black text-white rounded-sm cursor-pointer z-0 flex justify-center items-center"
               >
                 <Link to={`/watch/${record.id}`}>
                   <div className="absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[90%] h-[80%] shadow-2xl border-[0.2px] border-white/20 rounded-sm">
@@ -82,7 +82,7 @@ const ProgramListScroll = ({ data, text }) => {
                     </div>
                   </div>
                 </Link>
-                <div className="absolute bottom-0 z-50 font-sm text-white md:hidden text-center font-light h-[40px] w-full py-1 px-2">
+                <div className="absolute bottom-0 z-50 font-sm text-white md:hidden text-center font-light h-[40px] bg-black/40 py-1 px-2">
                   {contentType === "movie" ? record.title : record.name}
                 </div>
               </div>
