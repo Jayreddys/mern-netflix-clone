@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-import { ORIGINAL_IMG_BASE_URL, SMALL_IMG_BASE_URL } from "../utils/constants";
 import { ChevronLeft, ChevronRight, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useContentStore } from "../store/content";
@@ -59,7 +57,7 @@ const ProgramListScroll = ({ data, text }) => {
       />
       <div
         ref={scrollRef}
-        className="overflow-x-auto scrollbar-hide scroll-smooth w-full h-[200px] flex overflow-y-hidden"
+        className="overflow-x-auto scrollbar-hide scroll-smooth w-full h-[200px] flex overflow-y-hidden mb-12"
         style={{ scrollBehavior: "smooth" }}
         onScroll={getScrollPosition}
       >
@@ -77,11 +75,14 @@ const ProgramListScroll = ({ data, text }) => {
                       alt={record.title}
                       className=" relative w-full h-full  object-cover object-center rounded-sm transition hover:scale-150 hover:opacity-20 ease-in-out"
                     />
-                    <div className="absolute h-full w-full opacity-0 hover:opacity-100 bg-black/90 flex items-center justify-center sm:text-sm left-0 top-0 whitespace-nowrap text-white z-50 text-xs transition ease-in-out">
+                    <div className="absolute hidden md:flex h-full w-full opacity-0 hover:opacity-100 bg-black/90 items-center justify-center sm:text-sm left-0 top-0 whitespace-nowrap text-white z-50 text-xs transition ease-in-out">
                       {contentType === "movie" ? record.title : record.name}
                     </div>
                   </div>
                 </Link>
+                <div className="absolute -bottom-5 z-50 font-sm text-white md:hidden text-center font-light h-[40px] w-full py-1 px-2">
+                  {contentType === "movie" ? record.title : record.name}
+                </div>
               </div>
             )
         )}

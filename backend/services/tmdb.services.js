@@ -2,7 +2,6 @@ import axios from "axios";
 import { ENV_VARS } from "../config/envVars.js";
 
 export const fetchfromTMDB = async (url) => {
-  console.log("Fetching data from TMDB...", ENV_VARS.TMDB_API_KEY);
   const options = {
     headers: {
       accept: "application/json",

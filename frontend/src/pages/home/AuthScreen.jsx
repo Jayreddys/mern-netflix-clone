@@ -115,7 +115,7 @@ const AuthScreen = () => {
                 <div className="flex justify-between items-center py-2 px-3">
                   <img
                     src="/stranger-things-sm.png"
-                    className="h-full max-h-[58px]"
+                    className="h-full max-h-[36px] lg:max-h-[58px]"
                     alt="sm"
                   />
                   <div className="flex flex-col justify-center items-start">
@@ -127,7 +127,7 @@ const AuthScreen = () => {
                   <img
                     src="/download-icon.gif"
                     alt="download"
-                    className="h-full max-h-[54px]"
+                    className="h-full max-h-[36px] lg:max-h-[54px]"
                   />
                 </div>
               </div>
